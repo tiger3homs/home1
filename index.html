@@ -12,8 +12,10 @@ window.__vite_plugin_react_preamble_installed__ = true
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OS Design v1</title>
-  <style type="text/css" data-vite-dev-id="/home/project/src/index.css">*, ::before, ::after {
+    <title>Tiger3Homs</title>
+  <style type="text/css" data-vite-dev-id="/home/tiger3homs/home/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap');
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -67,7 +69,7 @@ window.__vite_plugin_react_preamble_installed__ = true
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -119,9 +121,13 @@ window.__vite_plugin_react_preamble_installed__ = true
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-}/*
+}
+
+/*
 ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -438,6 +444,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -478,6 +485,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -511,691 +519,425 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
-.absolute {
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rtl {
+    direction: rtl;
+    font-family: 'Noto Naskh Arabic', sans-serif;
+  }
+
+.ltr {
+    direction: ltr;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+.absolute{
   position: absolute;
 }
-.relative {
-  position: relative;
+
+.right-4{
+  right: 1rem;
 }
-.z-10 {
-  z-index: 10;
+
+.top-4{
+  top: 1rem;
 }
-.mx-auto {
+
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
-.mb-4 {
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-4{
   margin-bottom: 1rem;
 }
-.ml-16 {
-  margin-left: 4rem;
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
+
+.mb-8{
+  margin-bottom: 2rem;
 }
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
-}
-.mt-12 {
-  margin-top: 3rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
-.mt-4 {
+
+.mt-4{
   margin-top: 1rem;
 }
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.mt-8 {
-  margin-top: 2rem;
-}
-.block {
-  display: block;
-}
-.flex {
+
+.flex{
   display: flex;
 }
-.inline-flex {
-  display: inline-flex;
-}
-.grid {
+
+.grid{
   display: grid;
 }
-.hidden {
-  display: none;
-}
-.h-12 {
-  height: 3rem;
-}
-.h-16 {
-  height: 4rem;
-}
-.h-5 {
-  height: 1.25rem;
-}
-.h-56 {
-  height: 14rem;
-}
-.h-6 {
-  height: 1.5rem;
-}
-.h-8 {
-  height: 2rem;
-}
-.min-h-screen {
+
+.min-h-screen{
   min-height: 100vh;
 }
-.w-12 {
-  width: 3rem;
+
+.max-w-3xl{
+  max-width: 48rem;
 }
-.w-5 {
-  width: 1.25rem;
+
+.max-w-4xl{
+  max-width: 56rem;
 }
-.w-6 {
-  width: 1.5rem;
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
-.w-8 {
-  width: 2rem;
+
+.items-start{
+  align-items: flex-start;
 }
-.w-full {
-  width: 100%;
-}
-.max-w-7xl {
-  max-width: 80rem;
-}
-.grow {
-  flex-grow: 1;
-}
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.items-center {
-  align-items: center;
-}
-.justify-center {
+
+.justify-center{
   justify-content: center;
 }
-.justify-between {
+
+.justify-between{
   justify-content: space-between;
 }
-.gap-10 {
-  gap: 2.5rem;
+
+.gap-2{
+  gap: 0.5rem;
 }
-.gap-8 {
+
+.gap-8{
   gap: 2rem;
 }
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+
+.rounded{
+  border-radius: 0.25rem;
 }
-.overflow-hidden {
-  overflow: hidden;
+
+.rounded-full{
+  border-radius: 9999px;
 }
-.rounded-lg {
+
+.rounded-lg{
   border-radius: 0.5rem;
 }
-.rounded-md {
-  border-radius: 0.375rem;
-}
-.border {
-  border-width: 1px;
-}
-.border-t {
-  border-top-width: 1px;
-}
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-.border-transparent {
-  border-color: transparent;
-}
-.bg-blue-50 {
+
+.bg-blue-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
-.bg-blue-600 {
+
+.bg-blue-900{
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
-.bg-gray-50 {
+
+.bg-gray-700{
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
-.bg-gray-800 {
+
+.bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
+.bg-gray-800\/50{
+  background-color: rgb(31 41 55 / 0.5);
 }
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
-.p-6 {
+
+.from-gray-900{
+  --tw-gradient-from: #111827 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(17 24 39 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-gray-800{
+  --tw-gradient-to: #1f2937 var(--tw-gradient-to-position);
+}
+
+.p-6{
   padding: 1.5rem;
 }
-.px-2 {
+
+.px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-3 {
+
+.px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.px-4 {
+
+.px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.py-16 {
+
+.py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-.pb-8 {
+
+.py-8{
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.pt-2 {
-  padding-top: 0.5rem;
-}
-.pt-8 {
-  padding-top: 2rem;
-}
-.text-center {
+
+.text-center{
   text-align: center;
 }
-.text-3xl {
+
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-4xl {
+
+.text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-lg {
+
+.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-sm {
+
+.text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xl {
+
+.text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-extrabold {
-  font-weight: 800;
+
+.font-bold{
+  font-weight: 700;
 }
-.font-medium {
-  font-weight: 500;
-}
-.font-semibold {
+
+.font-semibold{
   font-weight: 600;
 }
-.uppercase {
-  text-transform: uppercase;
+
+.leading-relaxed{
+  line-height: 1.625;
 }
-.leading-6 {
-  line-height: 1.5rem;
-}
-.leading-8 {
-  line-height: 2rem;
-}
-.tracking-tight {
-  letter-spacing: -0.025em;
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-.text-blue-600 {
+
+.text-blue-400{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
-.text-gray-400 {
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.text-white {
+
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.transition-shadow {
-  transition-property: box-shadow;
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.hover\:bg-blue-700:hover {
+
+.hover\:bg-gray-700:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
-.hover\:text-blue-600:hover {
+
+.hover\:text-blue-400:hover{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.hover\:shadow-md:hover {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.focus\:border-blue-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-.focus\:ring-blue-500:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-}
-.focus\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px;
-}
-@media (min-width: 640px) {
 
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
+@media (min-width: 768px){
 
-  .sm\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sm\:mt-12 {
-    margin-top: 3rem;
-  }
-
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:h-72 {
-    height: 18rem;
-  }
-
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .sm\:grid-cols-2 {
+  .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:justify-center {
-    justify-content: center;
+  .md\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
-  .sm\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
-  .sm\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .sm\:pb-16 {
-    padding-bottom: 4rem;
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-@media (min-width: 768px) {
-
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:h-96 {
-    height: 24rem;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .md\:text-6xl {
+  .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
   }
+}</style></head>
+<body>
+  <div id="root">
+    <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white ltr">
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
+      <!-- Language Switcher -->
+      <div class="absolute top-4 right-4 flex gap-2">
+        <button class="px-2 py-1 rounded bg-blue-500">EN</button>
+        <button class="px-2 py-1 rounded bg-gray-700">SV</button>
+        <button class="px-2 py-1 rounded bg-gray-700 font-arabic">ع</button>
+      </div>
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-@media (min-width: 1024px) {
+      <!-- Header Section -->
+      <header class="container mx-auto px-4 py-16 md:py-32">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Tiger3Homs</h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-8">Website Developer & Tech Enthusiast</p>
 
-  .lg\:absolute {
-    position: absolute;
-  }
+          <!-- Social Links -->
+          <div class="flex justify-center space-x-6">
+            <a href="https://github.com/tiger3homs" class="hover:text-blue-400 transition-colors">GitHub</a>
+            <a href="mailto:tiger3homs@gmail.com" class="hover:text-blue-400 transition-colors">Email</a>
+            <a href="https://facebook.com/tiger3homs" class="hover:text-blue-400 transition-colors">Facebook</a>
+            <a href="https://instagram.com/obajda.s" class="hover:text-blue-400 transition-colors">Instagram</a>
+          </div>
+        </div>
+      </header>
 
-  .lg\:inset-y-0 {
-    top: 0px;
-    bottom: 0px;
-  }
+      <!-- Featured Projects Section -->
+      <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-  .lg\:right-0 {
-    right: 0px;
-  }
+          <!-- Project 1 -->
+          <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+            <h3 class="text-xl font-semibold mb-2">OS Design v1</h3>
+            <p class="text-gray-400">A sleek and intuitive website with modern, user-friendly navigation and professional presentation.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">Modern</span>
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">User-friendly</span>
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">Professional</span>
+            </div>
+          </div>
 
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+          <!-- Project 2 -->
+          <div class="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors">
+            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+            <p class="text-gray-400">Coming soon.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">Wait</span>
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">For</span>
+              <span class="px-3 py-1 bg-blue-900 rounded-full text-sm">It</span>
+            </div>
+          </div>
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
-  }
+        </div>
+      </section>
 
-  .lg\:h-full {
-    height: 100%;
-  }
+      <!-- About Me Section -->
+      <section class="container mx-auto px-4 py-16 bg-gray-800/50">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+          <p class="text-gray-300 text-lg leading-relaxed">
+            I'm a passionate software developer specializing in web development and system architecture. I enjoy building scalable solutions and contributing to open-source projects.
+          </p>
+        </div>
+      </section>
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
+      <!-- Footer Section -->
+      <footer class="container mx-auto px-4 py-8 text-center text-gray-400">
+        <p>&copy; 2024 Tiger3Homs. Built with React & Tailwind CSS</p>
+      </footer>
 
-  .lg\:w-full {
-    width: 100%;
-  }
+    </div>
+  </div>
 
-  .lg\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .lg\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
-  }
-
-  .lg\:text-center {
-    text-align: center;
-  }
-}
-@media (min-width: 1280px) {
-
-  .xl\:mt-28 {
-    margin-top: 7rem;
-  }
-
-  .xl\:pb-32 {
-    padding-bottom: 8rem;
-  }
-}
-</style></head>
-
-  <body>
-    <div id="root">
-        <div class="min-h-screen bg-white"><nav class="bg-white shadow-sm">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between h-16">
-                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home h-8 w-8 text-blue-600">
-                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                    <span class="ml-2 text-xl font-semibold">OS Design</span></div>
-                
-                <div class="hidden md:flex items-center space-x-8"><a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></div>
-                
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-700 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button></div></div></div></nav>
-            
-            <div id="home" class="relative bg-white overflow-hidden"><div class="max-w-7xl mx-auto"><div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                    <div class="sm:text-center lg:text-left">
-                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                        <span class="block">Crafting The Web Experience</span>
-                        <span class="block text-blue-600">You Truly Deserve</span></h1>
-                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">We help businesses grow by creating exceptional digital experiences that connect with their audience.</p>
-                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                            
-                <div class="rounded-md shadow">
-                    <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">Get Started<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5">
-                        <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></div></main></div></div>
-                
-                <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2850&amp;q=80" alt="Team working"></div></div>
-            <div id="services" class="py-12 bg-gray-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div  class="lg:text-center">
-                        <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Services</h2>
-                        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Everything you need to succeed</p></div>
-                    <div class="mt-10">
-                        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                            <div class="relative p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"><div><div class="absolute h-12 w-12 flex items-center justify-center rounded-md bg-blue-50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book h-6 w-6 text-blue-600">
-                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg></div>
-                                
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Digital Strategy</p></div>
-                                <div class="mt-2 ml-16 text-base text-gray-500">Build a roadmap for your digital success with our comprehensive strategy services.</div></div><div class="relative p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"><div><div class="absolute h-12 w-12 flex items-center justify-center rounded-md bg-blue-50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-blue-600"><circle cx="12" cy="12" r="10"></circle>
-                                    
-                                    <polyline points="12 6 12 12 16 14"></polyline></svg></div><p class="ml-16 text-lg leading-6 font-medium text-gray-900">24/7 Support</p></div>
-                                    <div class="mt-2 ml-16 text-base text-gray-500">Round-the-clock support to ensure your business never misses a beat.</div></div>
-                            <div class="relative p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"><div><div class="absolute h-12 w-12 flex items-center justify-center rounded-md bg-blue-50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6 text-blue-600"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div><p class="ml-16 text-lg leading-6 font-medium text-gray-900">Global Reach</p></div>
-                                
-                                <div class="mt-2 ml-16 text-base text-gray-500">Connect with customers worldwide through our international network.</div></div></div></div></div></div>
-            
-<div id="about" class="py-12 bg-gray-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div  class="lg:text-center">
-                        <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">About us</h2>
-                        </div>
-                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">We are a creative web design company specializing in crafting custom, user-friendly websites. From responsive design and e-commerce solutions to SEO and graphic design, we help your business stand out online and deliver an exceptional user experience.</p></div></div>            
-            
-            
-            <div id="contact" class="bg-white py-16 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto">
-                                    <div class="text-center">
-                                        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Us</h2><p class="mt-4 text-lg text-gray-500">Get in touch with our team to learn more about how we can help you succeed.</p></div>
-                                    <div class="mt-12"><form class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"><div><label for="name" class="block text-sm font-medium text-gray-700">Name</label><div class="mt-1"><input type="text" name="name" id="name" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></div></div>
-                                        <div><label for="email" class="block text-sm font-medium text-gray-700">Email</label><div class="mt-1"><input type="email" name="email" id="email" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></div></div>
-                                        <div class="sm:col-span-2"><label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                            <div class="mt-1"><textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></textarea></div></div><div class="sm:col-span-2"><button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Send Message<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail ml-2 h-5 w-5"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></button></div></form></div></div></div>
-
-
-            
-
-
-            <footer class="bg-gray-800">
-                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div>
-                            <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home h-8 w-8 text-white"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                <span class="ml-2 text-xl font-semibold text-white">OS Design</span></div>
-                            <p class="mt-4 text-gray-400">Building better digital experiences for forward-thinking businesses.</p></div>
-                        <div>
-                            <h3 class="text-white font-semibold mb-4">Quick Links</h3>
-                            <ul class="space-y-2"><li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li><li>
-                                <a href="#services" class="text-gray-400 hover:text-white">Services</a></li><li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
-                                <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li></ul></div>
-                        <div><h3 class="text-white font-semibold mb-4">Contact Info</h3><ul class="space-y-2">
-                            <li class="flex items-center text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 mr-2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                                <span>+963 996699669</span></li>
-                            <li class="flex items-center text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 mr-2"><rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                <span>tiger3homs@gmail.com</span></li>
-                            <li class="flex items-center text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 mr-2">
-                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                    <span>Syria, Homs City</span></li></ul></div></div>
-                    <div class="mt-8 border-t border-gray-700 pt-8 text-center">
-                                        <p class="text-gray-400">© 2025 OS Design. All rights reserved.</p></div></div></footer>
-        
-        </div></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.tsx?t=1742958267791"></script>
 </body>
 </html>
